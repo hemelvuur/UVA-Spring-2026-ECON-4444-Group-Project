@@ -570,6 +570,8 @@ st.markdown(
 	> Y_t = \left[\int_0^1 y(z, t)^{\tfrac{\sigma - 1}{\sigma}}\,dz\right]^{\tfrac{\sigma}{\sigma - 1}}
 	> $$
 	"""
+)
+st.markdown(
 	"\n The elasticity $\sigma$ controls how forgiving the aggregate is to compositional imbalance: \n"
 	"- $\sigma < 1$: **gross complements** — a shortfall on any one task hurts the whole. \n"
 	"- $\sigma > 1$: **substitutes** — gains elsewhere can paper over weak tasks."
