@@ -37,7 +37,7 @@ st.markdown(
           box-shadow: inset 1px 1px 0 #ffffff80 !important;
       }}
       [data-testid="stHeader"]::before {{
-          content: "Task Reallocation and the AI Productivity Paradox  —  UVA ECON 4444";
+          content: "Task Reallocation and the AI Productivity Paradox";
           position: absolute;
           left: 0;
           right: 0;
@@ -458,9 +458,9 @@ st.markdown(
 )
 
 # ══ 2. THE PUZZLE ═════════════════════════════════════════════════════════════
-st.header("The Puzzle")
+st.header("The \"Puzzle\"")
 st.markdown(
-    "Forty years ago Robert Solow quipped that the computer age was visible everywhere "
+    "Forty years ago, Robert Solow quipped that the computer age was visible everywhere "
     "except in the productivity statistics. A similar paradox is re-emerging around "
     "generative AI: firms adopt it faster than ever, yet the measured productivity "
     "gains remain strikingly small."
@@ -484,18 +484,16 @@ st.markdown(
     "Most explanations for the paradox invoke **measurement problems**, "
     "**complementary intangibles** (Brynjolfsson, Rock & Syverson 2021), or "
     "**organizational adjustment costs** (McElheran et al. 2025). "
-    "This paper asks a narrower question:"
 )
 st.markdown(
     "> **Can changes in task composition during AI diffusion, on their own, generate a "
     "temporary stagnation or decline in aggregate output?**"
 )
 st.markdown(
-    "The contribution is to show that a purely *compositional* channel is sufficient. "
     "When adoption is driven by diffusion dynamics rather than realized productivity, it "
     "can mechanically push the automation frontier past the point where reallocating tasks "
     "to AI raises output. A CES aggregator with task complementarities then converts that "
-    "overshoot into a decline in $Y$ — even as AI's own productivity keeps rising."
+    "overshoot into a decline in $Y$, even as AI's own productivity keeps rising."
 )
 
 st.info(
@@ -593,7 +591,7 @@ st.markdown(
 # ══ 5. CALIBRATION ════════════════════════════════════════════════════════════
 st.header("Calibration")
 st.markdown(
-    "The parameter ranges below are not invented — each one comes from the empirical or "
+    "The parameter ranges below are based on empirical or "
     "theoretical literature, so the simulator stays inside economically credible territory."
 )
 
@@ -747,7 +745,7 @@ if crossing_year is not None:
         f"**Overshoot detected at {crossing_year}.** Adoption "
         f"$I = {I[first_crossing]:.3f}$ exceeds the productivity-consistent frontier "
         f"$z^* = {z_star[first_crossing]:.3f}$. From here, the economy slides down the "
-        f"descending arm of the J-curve — even though $A_K(t)$ is still rising."
+        f"descending arm of the J-curve, even though $A_K(t)$ is still rising."
     )
 else:
     st.success(
@@ -783,7 +781,7 @@ with st.container(border=True):
     st.markdown("### σ — depth of the decline")
     st.markdown(
         "When tasks are gross complements ($\\sigma < 1$), shortfalls on high-$z$ tasks "
-        "cannot be papered over by AI gains elsewhere — the post-peak fall is sharp. "
+        "cannot be papered over by AI gains elsewhere, so the post-peak fall is sharp. "
         "When tasks are substitutes ($\\sigma > 1$), the decline is muted but does not "
         "disappear."
     )
@@ -809,13 +807,13 @@ with st.container(border=False):
 # ══ 8. SIGNIFICANCE & IMPACT ══════════════════════════════════════════════════
 st.header("Significance & Impact")
 st.markdown(
-    "The headline is straightforward: **the AI productivity paradox does not require any "
+    "The headline is straightforward: **The AI productivity paradox does not require any "
     "of the channels emphasized in the existing literature.** No measurement error. "
     "No unmeasured intangibles. No organizational adjustment costs. Not even a slowing "
     "of AI's own productivity growth."
 )
 st.markdown(
-    "A purely compositional mechanism — exogenous diffusion crossing the "
+    "The mechanism — exogenous diffusion crosses the "
     "productivity-consistent frontier, filtered through a CES aggregator with task "
     "complementarities — is enough to produce a temporary decline in $Y$."
 )
@@ -827,7 +825,7 @@ st.markdown(
     "Encouraging adoption for its own sake may be precisely the wrong prescription."
 )
 st.markdown(
-    "<div class='caption-muted'>The model should be read as isolating a theoretical "
+    "<div class='caption-muted'>Disclaimer: The model should be read as isolating a theoretical "
     "mechanism, not as forecasting aggregate dynamics. The same compositional logic, "
     "combined with the intangibles and adjustment-cost channels from the existing "
     "literature, gives a richer picture of what a real AI J-curve might look like.</div>",
