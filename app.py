@@ -50,8 +50,8 @@ st.markdown(
           color: #ffffff;
           font-family: {WIN98_FONT};
           font-size: 20px;
-          font-weight: bold;
-          letter-spacing: 0;
+          font-weight: 600;
+          letter-spacing: 1px;
           pointer-events: none;
           z-index: 999;
       }}
@@ -81,9 +81,9 @@ st.markdown(
           background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
           color: #ffffff !important;
           font-family: {WIN98_FONT};
-          font-size: 1.05rem !important;
+          font-size: 1.25rem !important;
           font-weight: bold !important;
-          letter-spacing: 0 !important;
+          letter-spacing: 1px !important;
           padding: 4px 8px !important;
           margin: 0 0 0.8rem 0 !important;
       }}
@@ -93,10 +93,10 @@ st.markdown(
           background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
           color: #ffffff !important;
           font-family: {WIN98_FONT};
-          font-size: 1.25rem !important;
+          font-size: 1rem !important;
           font-weight: bold !important;
 		  text-align: center;
-          letter-spacing: 0 !important;
+          letter-spacing: 1px !important;
           padding: 3px 8px !important;
 		  margin-bottom: 1rem !important;
           border: none !important;
@@ -154,7 +154,7 @@ st.markdown(
           );
           color: #ffffff;
           font-family: {WIN98_FONT};
-          font-size: 0.95rem;
+          font-size: 1.25rem;
           font-weight: bold;
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -572,7 +572,7 @@ st.markdown(
 	"""
 )
 st.markdown(
-	"\n The elasticity $\sigma$ controls how forgiving the aggregate is to compositional imbalance: \n"
+	"The elasticity $\sigma$ controls how forgiving the aggregate is to compositional imbalance: \n"
 	"- $\sigma < 1$: **gross complements** — a shortfall on any one task hurts the whole. \n"
 	"- $\sigma > 1$: **substitutes** — gains elsewhere can paper over weak tasks."
 )
